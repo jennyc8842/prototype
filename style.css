@@ -1,0 +1,41 @@
+
+
+h1 {
+  text-align: center;
+  color: rgb(207, 250, 128);
+  background-color: white;
+  font-size: 50px;
+  font-family: Courier New;
+ 
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Courier New;
+}
+
+#music {
+  color: rgb(185, 231, 200);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+button {
+  color: rgb(255, 145, 145);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+/* body {
+   background-image: url("https://images.snapwi.re/c892/553e359371875c17200c306c.w800.jpg");
+} */
+
+.button {
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: white;
+
+ 
+}
