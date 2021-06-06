@@ -1,9 +1,8 @@
-// alert("Welcome to a place where you can relax/study! Click start whenever you're ready.")
+alert("Welcome to a place where you can relax/study! Choose your music and start whenever you're ready.")
 
 
 
 // window. = makes to a global variable
-
 // start button
 document.querySelector("button").addEventListener("click", function() {
 
@@ -30,7 +29,9 @@ document.querySelector("button").addEventListener("click", function() {
 // displays mins on screen + prompts user
  userMinsInput();
 
- 
+
+
+
  // dropdown menu for music
    var userPickMusic = document.querySelector("#music").value;
   
@@ -43,9 +44,8 @@ document.querySelector("button").addEventListener("click", function() {
             hiphop.loop = true;
             hiphop.play();
           }
-          if(window.userMins <=0) {
+          if(window.userMins <= 0) {
             hiphop.loop = false;
-
             
            
            
@@ -61,7 +61,7 @@ document.querySelector("button").addEventListener("click", function() {
             rnb.play();
         }
     
-        if(window.userMins ==0){
+        if(window.userMins == 0){
             rnb.loop = false;
            
         }
@@ -73,7 +73,7 @@ document.querySelector("button").addEventListener("click", function() {
             cafe.loop = true;
             cafe.play();
         }
-          if(window.userMins <=0){
+          if(window.userMins <= 0){
             cafe.loop = false;
            
         }
@@ -94,15 +94,38 @@ document.querySelector("button").addEventListener("click", function() {
 }
 
 
-  
+// reset button
+document.querySelector("#reset").addEventListener("click", function() {
+
+  // clears timer + mins remaining 
+   document.querySelector("#timer").innerHTML = "";
+   clearInterval(window.makeTimer);
+
+   document.querySelector("#music").value = "";
+
+   // pauses music
+    if(userPickMusic == "hiphop"){
+      hiphop.pause();
+    }
+    if(userPickMusic == "rnb"){
+      rnb.pause();
+    }
+    if(userPickMusic == "cafe"){
+      cafe.pause();
+    }
+    if(userPickMusic == "electro"){
+      electro.pause();
+    }
+
+
+ });
+
 
 });
  
 
 // timer decreases and stops at 0 
  function timer (){
-    // var userPickMusic = document.querySelector("#music").value;
-    
     
    if (window.userMins > 0){
      
@@ -110,7 +133,6 @@ document.querySelector("button").addEventListener("click", function() {
         // updates per minute
         document.querySelector("#timer").innerHTML = window.userMins + " minutes remaining...";
   
-
         console.log(window.userMins); // to see mins go down
 
 
@@ -122,20 +144,15 @@ document.querySelector("button").addEventListener("click", function() {
         clearInterval(window.makeTimer);
        
         alert("BEEP BEEP BEEP!")
-        alert("Click the start button again to restart!")
-
-         
+        alert("Click the reset button to restart!");    
         
 
-        }
-
-
-    
-
-        } 
+   }
+} 
       
- 
- 
+
+
+
   //  window.convertSecs = Math.floor(window.userMins*60);
   //  if (window.convertSecs > 0){
   //       window.convertSecs--;
@@ -147,48 +164,4 @@ document.querySelector("button").addEventListener("click", function() {
   //       alert("BEEP BEEP BEEP!")
   //       }
   //    } 
-   
   
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// https://www.w3schools.com/jsref/met_audio_play.asp
-
-// timer using for loop?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
