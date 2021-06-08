@@ -24,12 +24,14 @@ h1 {
 }
 
 
-/* h2 {
+h2 {
   text-align: center;
   color: white;
   font-size: 30px;
   font-family: Courier New;
-} */
+  border-style: dotted;
+ 
+}
 
 #music {
   color: rgb(185, 231, 200);

@@ -1,4 +1,4 @@
-alert("Welcome to a place where you can relax/study! Choose your music and start whenever you're ready.")
+// alert("Welcome to a place where you can relax/study! Choose your music and start whenever you're ready.")
 
 
 
@@ -100,7 +100,8 @@ document.querySelector("#reset").addEventListener("click", function() {
   // clears timer + mins remaining 
    document.querySelector("#timer").innerHTML = "";
    clearInterval(window.makeTimer);
-
+  
+  // resets back to default of drop down menu
    document.querySelector("#music").value = "";
 
    // pauses music
@@ -119,10 +120,6 @@ document.querySelector("#reset").addEventListener("click", function() {
 
 
  });
-
-
-});
- 
 
 // timer decreases and stops at 0 
  function timer (){
@@ -145,11 +142,29 @@ document.querySelector("#reset").addEventListener("click", function() {
        
         alert("BEEP BEEP BEEP!")
         alert("Click the reset button to restart!");    
+          
+          if(userPickMusic == "hiphop"){
+              hiphop.pause();
+           }
+          if(userPickMusic == "rnb"){
+              rnb.pause();
+           }
+          if(userPickMusic == "cafe"){
+             cafe.pause();
+          }
+          if(userPickMusic == "electro"){
+            electro.pause();
+         }
         
 
    }
 } 
-      
+
+});
+ 
+
+
+    
 
 
 
