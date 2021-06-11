@@ -24,15 +24,6 @@ h1 {
 }
 
 
-h2 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-family: Courier New;
-  border-style: dotted;
- 
-}
-
 #music {
   color: rgb(185, 231, 200);
   font-size: 30px;
@@ -46,10 +37,6 @@ button {
   font-family: monospace;
  
 }
-
-/* body {
-   background-image: url("https://i.pinimg.com/originals/d3/75/8b/d3758b297ce9aa12f6b32e4fc5548adc.gif");
-} */
 
 
 body {

@@ -1,4 +1,4 @@
-// alert("Welcome to a place where you can relax/study! Choose your music and start whenever you're ready.")
+alert("Welcome to a place where you can relax/study! Choose your music and start whenever you're ready.")
 
 
 
@@ -121,6 +121,8 @@ document.querySelector("#reset").addEventListener("click", function() {
 
  });
 
+
+
 // timer decreases and stops at 0 
  function timer (){
     
@@ -161,22 +163,4 @@ document.querySelector("#reset").addEventListener("click", function() {
 } 
 
 });
- 
-
-
-    
-
-
-
-  //  window.convertSecs = Math.floor(window.userMins*60);
-  //  if (window.convertSecs > 0){
-  //       window.convertSecs--;
-  //       console.log(window.convertSecs); // to see secs go down
-
-  //  } else {
-        
-  //       clearInterval(window.makeTimer);
-  //       alert("BEEP BEEP BEEP!")
-  //       }
-  //    } 
   
